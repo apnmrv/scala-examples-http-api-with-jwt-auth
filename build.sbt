@@ -12,10 +12,10 @@ resolvers ++= Seq("snapshots", "releases").map(Resolver.sonatypeRepo)
 lazy val root = (project in file("."))
   .settings(
     mainClass in assembly := Some("examples.http.api.AppRunner"),
-    name := "pss-api",
+    name := "http-api-with-jwt-auth",
   ).settings(
     inThisBuild(List(
-      name := "pss-api",
+      name := "http-api-with-jwt-auth",
       organization    := "com.apnmrv",
       scalaVersion    := "2.12.10"
     )),
